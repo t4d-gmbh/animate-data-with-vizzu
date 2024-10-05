@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+@font-face {
+	font-family: 'Roboto Condensed';
+	font-style: normal;
+	font-weight: 400;
+	src:
+		local('Roboto Condensed'),
+		local('RobotoCondensed-Regular'),
+		url('roboto-condensed-v18-latin_latin-ext-regular.woff2') format('woff2'),
+		/* Super Modern Browsers */ url('roboto-condensed-v18-latin_latin-ext-regular.woff')
+			format('woff'),
+		/* Modern Browsers */ url('roboto-condensed-v18-latin_latin-ext-regular.ttf')
+			format('truetype'); /* Legacy iOS */
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+#title {
+	width: 800px;
+	margin: auto;
+	padding-bottom: 50px;
+}
+
+div.about-box > div {
+	height: 350px;
+}
+
+
+#about > div > div {
+	padding: 25px;
+}
+
+#about > div > div > a > img {
+	margin-bottom: 25px;
+}
+
+p.about-text {
+	height: 120px;
+}
+
+#zoom, #myVizzu {
+    width: 1080px;
+	height: 750px;
+	margin:auto;
+}
+
+#options {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 25px;
+  width: 50%;
+  margin: auto;
+}
+
+
+.button {
+	cursor: pointer;	
+}
+
+input {
+	margin: auto;
+}
+
+
+div {
+	margin: auto;
+}
+
+
+a {
+	font-weight: 400;
+	font-size: 15px;
+	line-height: 1.5em;
+	font-family: Roboto;
+	color: #4171cd;
+	text-decoration: none;
+}
