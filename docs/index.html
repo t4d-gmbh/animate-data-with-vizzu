@@ -1,6 +1,105 @@
 ---
 layout: default
-title: "Happy Jekylling!"
+permalink: /
+title: "Animate data with vizzu"
 ---
 
-<h1>Titel</h1>
+<!-- Content -->
+<div class="w3-content" style="max-width:1280px;margin-top:80px;margin-bottom:80px">
+  
+  {% include animation.html %}
+
+</div>
+
+  <!-- Grid -->
+  <div class="w3-row-padding" id="about">
+  
+    <div class="w3-center w3-padding-64">
+      <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">About</span>
+    </div>
+
+    <div class="w3-quarter w3-margin-bottom about-box">
+      <div class="w3-card-4 w3-center">
+        <a href="https://t4d.ch" target="_blank">
+		  <img src="https://avatars.githubusercontent.com/u/67831837?s=200&v=4" alt="T4D" height="80px">
+		</a>
+        <div class="w3-container">
+          <h3>THE COMPANY</h3>
+          <p class="about-text">T4D - Tools to Discover, Design, Develop and Deploy. Providing know-how for data visualisation, analytics, and software development.</p>
+		  <p>
+		    <a href="https://t4d.ch" target="_blank">t4d.ch</a>
+		  </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-quarter w3-margin-bottom about-box">
+      <div class="w3-card-4 w3-center">
+        <a href="https://lib.vizzuhq.com/latest" target="_blank">
+		  <img src="{{ site.baseurl }}assets/img/vizzu.png" alt="Vizzu" height="80px">
+		</a>
+        <div class="w3-container">
+          <h3>THE TOOLS</h3>
+          <p class="about-text">
+		    Vizzu is an amazing library for animated data visualizations and data stories. 
+		    To store the data we used the library <a href="https://github.com/sql-js" target="_blank">sql.js</a>
+		  </p>
+          <p><a href="https://lib.vizzuhq.com/latest/" target="_blank">lib.vizzuhq.com</a></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-quarter w3-margin-bottom about-box">
+      <div class="w3-card-4 w3-center">
+        <a href="https://lib.vizzuhq.com/latest/" target="_blank">
+		  <img src="{{ site.baseurl }}assets/img/dados.png" alt="dados.gov.pt" height="80px">
+		</a>
+        <div class="w3-container">
+          <h3>THE DATA</h3>
+          <p class="about-text">We used a public data set which contains detailed information about registered tourism establishments in Portugal.</p>
+          <p><a target="_blank" href="https://dados.gov.pt/pt/datasets/estabelecimentos-de-alojamento-local">dados.gov.pt</a></p>
+        </div>
+      </div>
+    </div>
+	
+    <div class="w3-quarter w3-margin-bottom about-box">
+      <div class="w3-card-4 w3-center">
+        <a href="https://github.com/t4d-gmbh/animate-data-with-vizzu" target="_blank">
+		  <img src="{{ site.baseurl }}assets/img/github.png" alt="dados.gov.pt" height="80px">
+		</a>
+        <div class="w3-container">
+          <h3>THE SOURCE</h3>
+          <p class="about-text"> 
+		    The source code of this <a href="https://github.com/t4d-gmbh/animate-data-with-vizzu" target="_blank">showcase</a> 
+		    as well as the source code of 
+		    <a href="https://lib.vizzuhq.com/latest/" target="_blank">lib.vizzuhq.com</a> and 
+		    <a href="https://github.com/sql-js" target="_blank">sql.js</a> are available on GitHub.
+		  </p>
+          <p><a href="https://github.com/t4d-gmbh/animate-data-with-vizzu" target="_blank">github.com</a></p>
+        </div>
+      </div>
+    </div>
+	
+  </div>
+
+
+
+
+  <!-- Grid -->
+  <div class="w3-row-padding" id="contact">
+  
+    <div class="w3-center w3-padding-64">
+      <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">Contact</span>
+    </div>
+
+	<div class="w3-center">
+		<h3>Do you want to bring your data to life?</h3>
+		<a href= "mailto: info@t4d.ch">info@t4d.ch </a>
+		<br/><br/><br/><br/>
+		<br/><br/><br/><br/>
+	</div>
+	
+  </div>
+  
+ 
+</div>
