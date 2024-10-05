@@ -22,7 +22,7 @@
 }
 
 #title {
-	width: 800px;
+	max-width: 800px;
 	margin: auto;
 	padding-bottom: 50px;
 }
@@ -44,9 +44,20 @@ p.about-text {
 	height: 120px;
 }
 
-#zoom, #myVizzu {
-    width: 1080px;
-	height: 750px;
+#bgImage {
+	max-width: 1080px;
+	height: 720px;
+}
+
+#zoom {
+    max-width: 1080px;
+	min-height: 720px;
+}
+
+#myVizzu {
+	width: 100%;
+	height: 720px;
+	object-fit: contain;
 	margin:auto;
 }
 
@@ -54,10 +65,14 @@ p.about-text {
   display: grid;
   grid-template-columns: auto auto auto;
   padding: 25px;
-  width: 50%;
+  max-width: 600px;
   margin: auto;
 }
 
+.w3-top {
+	position: absolute;
+	top: 0px;
+}
 
 .button {
 	cursor: pointer;	

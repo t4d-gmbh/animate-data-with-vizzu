@@ -52,10 +52,26 @@ class Animation {
 		})
 		
 		
+		
+		var displayWidth = window.innerWidth;$
+		
+		
+		
         let drawYear = function(event) {
-	      event.renderingContext.font = '200 80px Roboto'
-	      event.renderingContext.fillStyle = '#737373FF'
-	      event.renderingContext.fillText(actYear, 875, 500)
+		  
+		  let yearLabelPositionX = 875;
+		  let yearLabelPositionY = 500;
+		  let fontStyle = '200 80px Roboto';
+		  if( displayWidth < 1080 )
+		  {  
+			yearLabelPositionX = 10;
+			yearLabelPositionY = 75;
+			fontStyle = '300 30px Roboto';
+		  }
+		  
+		  event.renderingContext.fillStyle = '#737373FF';
+		  event.renderingContext.font =  fontStyle;
+	      event.renderingContext.fillText(actYear, yearLabelPositionX, yearLabelPositionY);
 	    };
 			
 	
@@ -67,6 +83,9 @@ class Animation {
 
         this.anim = anim;
 		this.chart = chart;
+		
+		
+		
 		
 		
 		for (let year = year_from; year <= year_to; year++) {
@@ -92,6 +111,7 @@ class Animation {
 							fontSize: 15,
 							title: {
 								fontWeight: 400,
+								fontSize: 15,
 								color: '#000000'
 							},
 							plot: {
