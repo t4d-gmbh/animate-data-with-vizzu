@@ -43,9 +43,17 @@ class Animation {
 
         const bgImage = document.getElementById('bgImage')
 
+		var displayWidth = window.innerWidth;
 
         function drawBg(dc) {
-	      dc.drawImage(bgImage, 0, 0)
+			
+			var dx = 0;
+			if( displayWidth < 1080 )
+			{
+				dx = parseInt( (1080 - displayWidth) / 2);
+			}
+		  
+	      dc.drawImage(bgImage, -dx, 0)
         }
 
         const chart = new Vizzu('myVizzu', { data })
@@ -59,11 +67,6 @@ class Animation {
 			
 			return chart
 		})
-		
-		
-		
-		var displayWidth = window.innerWidth;$
-		
 		
 		
         let drawYear = function(event) {

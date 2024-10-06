@@ -44,9 +44,14 @@ p.about-text {
 	height: 120px;
 }
 
-#bgImage {
+#bgImageContainer {
 	max-width: 1080px;
-	height: 720px;
+	padding: 0;
+	margin: 0;
+}
+
+#bgImage{
+	width: 100%;
 }
 
 #zoom {
