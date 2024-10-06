@@ -8,12 +8,12 @@ jQuery( document ).ready(function() {
 	var stat = 'init';
   
     jQuery( "#slider" ).slider({
-		value: 2,
-		min:   0.1,
-		max:   4,
+		value: -2,
+		min:   -4,
+		max:   -0.1,
 		step:  0.1,
 		change: function( event, ui ) {
-			anim.setSpeed( ui.value );
+			anim.setSpeed( ui.value  * -1 );
 		}
 	});
 
