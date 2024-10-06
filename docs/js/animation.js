@@ -7,6 +7,13 @@ class Animation {
 	
 	anim;
 	chart;
+	
+	delay = 1;
+	duration = 2; // default: 2
+	
+	setSpeed( s ) {
+		this.duration = s;
+	}
 
 	pause() {
 		
@@ -26,6 +33,8 @@ class Animation {
 		
 	}
 	
+	
+	
 	start() {
 
 		const year_from = 2000;
@@ -34,10 +43,10 @@ class Animation {
 
         const bgImage = document.getElementById('bgImage')
 
+
         function drawBg(dc) {
 	      dc.drawImage(bgImage, 0, 0)
         }
-
 
         const chart = new Vizzu('myVizzu', { data })
 		
@@ -83,9 +92,6 @@ class Animation {
 
         this.anim = anim;
 		this.chart = chart;
-		
-		
-		
 		
 		
 		for (let year = year_from; year <= year_to; year++) {
@@ -140,7 +146,7 @@ class Animation {
 						}
 					},
 					{
-						duration: 2,
+						duration: this.duration,
 						delay: 0,
 						x: { easing: 'linear', delay: 0 },
 						y: { delay: 0 },
@@ -167,8 +173,8 @@ class Animation {
 					}
 				},
 				{
-					delay: 2.5,
-					duration: 0.3
+					delay:    this.delay * 2.5, //2.5,
+					duration: this.duration / 7 // 0.3
 				}
 			)
 		})
@@ -190,7 +196,7 @@ class Animation {
 				},
 				{
 					delay: 0,
-					duration: 2
+					duration: this.duration
 				}
 			)
 		)
@@ -204,7 +210,7 @@ class Animation {
 				},
 				{
 					delay: 0,
-					duration: 2
+					duration: this.duration
 				}
 			)
 		)
@@ -225,7 +231,7 @@ class Animation {
 					},
 					{
 						delay: 0,
-						duration: 0.005
+						duration: this.duration / 400   // 0.005
 					}
 				)
 			)
@@ -243,7 +249,7 @@ class Animation {
 				},
 				{
 					delay: 0,
-					duration: 1.5
+					duration: this.duration // 1.5
 				}
 			)
 		)
@@ -275,7 +281,7 @@ class Animation {
 				},
 				{
 					delay: 0,
-					duration: 0.1
+					duration: this.duration / 20 //0.1
 				}
 			)
 		)
@@ -291,8 +297,8 @@ class Animation {
 					}
 				},
 				{
-					delay: 4,
-					duration: 1
+					delay:    this.duration * 4, //4,
+					duration: this.duration / 2  // 1
 				}
 			)
 		)
@@ -330,7 +336,7 @@ class Animation {
 				},
 				{
 					delay: 0,
-					duration: 2
+					duration: this.duration // 2
 				}
 			)
 		)
@@ -344,7 +350,7 @@ class Animation {
 				},
 				{
 					delay: 0,
-					duration: 1
+					duration: this.duration / 2 // 1
 				}
 			)
 		)
@@ -371,8 +377,8 @@ class Animation {
 					}
 				},
 				{
-					delay: 4,
-					duration: 2
+					delay: this.duration * 4,  // 4
+					duration: this.duration    // 2
 				}
 			)
 		)

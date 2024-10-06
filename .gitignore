@@ -6,3 +6,4 @@ docs/.jekyll-metadata
 docs/.bundle/
 docs/vendor/
 docs/serve.cmd
+docs/import.db

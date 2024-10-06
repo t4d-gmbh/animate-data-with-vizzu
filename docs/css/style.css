@@ -61,22 +61,41 @@ p.about-text {
 	margin:auto;
 }
 
+	
 #options {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  padding: 25px;
-  max-width: 600px;
   margin: auto;
+  max-width: 600px;
+  padding: 10px;
 }
 
+#slider {
+  max-width: 500px;
+  margin: 20px 50px 10px 50px;
+}
+
+	
+#buttons {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+
 .w3-top {
-	position: absolute;
+	position: fixed;
+	width: 100%;
 	top: 0px;
 }
 
 .button {
 	cursor: pointer;	
+	background-color: #d8d8d8;
+	padding: 10px 15px 10px 15px;
+	border-radius: 5px;
 }
+.button:hover {
+	background-color: #c8c8c8;
+}
+
 
 input {
 	margin: auto;
