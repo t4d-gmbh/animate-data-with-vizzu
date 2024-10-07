@@ -51,7 +51,7 @@ jQuery( document ).ready(function() {
 		
 		if( stat !== 'init' )
 		{   
-			jQuery( "#slider" ).slider( "value", 2 );
+			jQuery( "#slider" ).slider( "value", -2 );
 			anim.stop();
 			anim.start();
 			stat = 'play';
