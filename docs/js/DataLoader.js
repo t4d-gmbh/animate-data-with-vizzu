@@ -24,6 +24,9 @@ initSqlJs(config).then(function(SQL){
     const db = new SQL.Database(uInt8Array);
     const contents = db.exec("SELECT year, dimension, CAST(measure as TEXT) as measure FROM measure_per_year_and_dimension WHERE evaluation=1");
 	data['records'] = contents[0].values;
+	
+	jQuery("#showcase").show();
+	jQuery("#loading").hide();
   };
   xhr.send();
 

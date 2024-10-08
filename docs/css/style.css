@@ -44,6 +44,15 @@ p.about-text {
 	height: 120px;
 }
 
+#showcase {
+    display: none;
+}
+
+#loading {
+    margin-top: 20px;
+}
+
+
 #bgImageContainer {
 	max-width: 1080px;
 	padding: 0;
